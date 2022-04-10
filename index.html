@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="css.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Low Level Languages</title>
+</head>
+<body>
+
+    <button onclick="topFunction()" id="botao" title="Subir">⬆</button>
+
+    <script>
+      var botao = document.getElementById("botao");
+
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          botao.style.display = "block";
+        } else {
+          botao.style.display = "none";
+        }
+      }
+
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+
+</script>
+
+    <div class="container">
+        <header class="header">
+            <h1 class="title">Low Level Languages</h1>
+            <div class="headerNav" id="menu">
+                <a class="links" href="#">Index</a>
+                <a class = "links" href="https://github.com/IcaroGMC">Github</a>
+                <a class="links" href="#sobre">About</a>
+            </div>
+            
+        </header>
+        <div class="navLeft" id="navLeft">
+            <p style="font-size: 55px; color: #31302f;">Topics</p>
+            <a class="links" href="#assembly">Assembly</a>
+            <a class="links" href="#c">C</a>
+            <a class="links" href="#rust">Rust</a>
+        </div>
+        <div class="center">
+            <h1 style="text-align: center;">Languages</h1>
+            <div class="centerText">
+                <div id="asm">
+                    <h2 id="assembly" style="text-align: center;">Assembly</h2>
+                    <img class="images" src="img/assemblyLogo.png" alt="Assembly Logo">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nam vero voluptatem itaque pariatur eveniet sunt, corrupti distinctio, delectus illo suscipit? Soluta laboriosam illo at fugit magni labore excepturi! Amet.</p>
+                </div>  
+            </div>
+            <div class="centerText">
+                <h2 id="c" style="text-align: center;">C</h2>
+                <img class="images" src="img/cLogo.png" alt="Assembly Logo">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nam vero voluptatem itaque pariatur eveniet sunt, corrupti distinctio, delectus illo suscipit? Soluta laboriosam illo at fugit magni labore excepturi! Amet.</p>
+            </div>
+            <div class="centerText">
+                <h2 id="rust" style="text-align: center;">Rust</h2>
+                <img class="images" src="img/RustLogo.png" alt="Assembly Logo">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nam vero voluptatem itaque pariatur eveniet sunt, corrupti distinctio, delectus illo suscipit? Soluta laboriosam illo at fugit magni labore excepturi! Amet.</p>
+            </div>
+        </div>
+        <div class="navRight">
+            <p style="font-size: 55px; color: #31302f;" id="sobre">About</p>
+            <p>This is a responsive site using HTML, CSS and Javascript.</p>
+        </div>
+        <div class="footer">
+            <p style="font-size: 55px; color: #31302f;">Copyright © IcaroGMC 2022</p>
+        </div>
+    </div>
+</body>
